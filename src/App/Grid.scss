@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex: 1;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: .75em;
+  z-index: 1;
+  background: #ffffff;
+}

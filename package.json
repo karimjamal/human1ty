@@ -1,0 +1,22 @@
+{
+  "name": "human1ty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "postcss-modules": "^1.4.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.9.0"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}

@@ -1,0 +1,21 @@
+.container {
+  width: 0;
+  height: 128px;
+  object-fit: cover;
+  position: absolute;
+  transition: all 0.5s ease;
+  animation-name: enter;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes enter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 128px;
+  }
+}
+
