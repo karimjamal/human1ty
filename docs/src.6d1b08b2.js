@@ -31,4 +31,4 @@ module.exports={container:"_container_55f8b"};
 },{"react":"HdMw","./Headlines":"Zzmk","./Grid":"b6G9","./App.scss":"4GtT"}],"H99C":[function(require,module,exports) {
 "use strict";var e=u(require("react")),t=require("react-dom"),r=u(require("./App/App"));function u(e){return e&&e.__esModule?e:{default:e}}(0,t.render)(e.default.createElement(r.default,null),document.getElementById("root")),module.hot&&module.hot.accept();
 },{"react":"HdMw","react-dom":"X9zx","./App/App":"TXR5"}]},{},["H99C"], null)
-//# sourceMappingURL=/human1ty/src.6d1b08b2.js.map
+//# sourceMappingURL=/src.6d1b08b2.js.map
