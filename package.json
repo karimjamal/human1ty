@@ -1,6 +1,7 @@
 {
   "name": "human1ty",
   "version": "1.0.0",
+  "homepage": "https://www.human1ty.us/",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
