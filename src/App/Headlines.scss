@@ -31,7 +31,7 @@
   position: absolute;
   opacity: 0;
   animation-name: cycle;
-  animation-duration: 15s;
+  animation-duration: 20s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-delay: #{$delay}s;
@@ -45,6 +45,9 @@
 }
 .subHeadline3 {
   @include subHeadline(12);
+}
+.subHeadline4 {
+  @include subHeadline(17);
 }
 
 .highlight {
@@ -81,11 +84,11 @@
     opacity: 1;
     transform: translateX(0);
   }
-  28% {
+  21% {
     opacity: 1;
     transform: translateX(0);
   }
-  35% {
+  26% {
     opacity: 0;
     transform: translateX(100%);
   }

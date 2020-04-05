@@ -34,7 +34,7 @@ const Grid = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const data = await (await fetch('https://uifaces.co/api?limit=99&emotion[]=happiness&random', {
+      const data = await (await fetch('https://uifaces.co/api?limit=30&emotion[]=happiness&random', {
         headers: {
           'X-API-KEY': '652ad3f96a6451262e9fdd3ecfb99f',
         },
