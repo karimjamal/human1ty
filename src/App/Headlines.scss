@@ -25,6 +25,9 @@
 .headline2 {
   @include headline(1);
 }
+.headline3 {
+  @include headline(2);
+}
 
 @mixin subHeadline($delay) {
   transform: translateX(-105%);
@@ -38,16 +41,16 @@
 }
 
 .subHeadline1 {
-  @include subHeadline(2);
+  @include subHeadline(5);
 }
 .subHeadline2 {
-  @include subHeadline(7);
+  @include subHeadline(10);
 }
 .subHeadline3 {
-  @include subHeadline(12);
+  @include subHeadline(15);
 }
 .subHeadline4 {
-  @include subHeadline(17);
+  @include subHeadline(20);
 }
 
 .highlight {

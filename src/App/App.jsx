@@ -1,14 +1,15 @@
-'use strict'
+'use strict';
 
-import React from "react";
+import React from 'react';
 import Headlines from './Headlines';
 import Grid from './Grid';
 import css from './App.scss';
 
-const App = () =>
+const App = () => (
   <div className={css.container}>
     <Grid />
     <Headlines />
-  </div>;
+  </div>
+);
 
 export default App;

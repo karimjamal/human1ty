@@ -8,11 +8,11 @@ const randomPos = (posX, posY) => {
   while (true) {
     let [x, y] = [posX, posY];
     const val = Math.random();
-    if (val <= .25) {
+    if (val <= 0.25) {
       x = posX - 1; // Move left
-    } else if (val <= .5) {
+    } else if (val <= 0.5) {
       y = posY + 1; // Move up
-    } else if (val <= .75) {
+    } else if (val <= 0.75) {
       x = posX + 1; // Move right
     } else {
       y = posY - 1; // Move down
@@ -34,11 +34,16 @@ const Grid = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const data = await (await fetch('https://uifaces.co/api?limit=30&emotion[]=happiness&random', {
-        headers: {
-          'X-API-KEY': '652ad3f96a6451262e9fdd3ecfb99f',
-        },
-      })).json();
+      const data = await (
+        await fetch(
+          'https://uifaces.co/api?limit=30&emotion[]=happiness&from_age=0&to_age=100',
+          {
+            headers: {
+              'X-API-KEY': '652ad3f96a6451262e9fdd3ecfb99f',
+            },
+          }
+        )
+      ).json();
       setImages(images.concat(data));
     };
 
@@ -72,7 +77,9 @@ const Grid = () => {
     const clones = humans.slice();
     let displaced;
     for (let i = 0; i < 10 && i < clones.length; i++) {
-      displaced = clones.find(h => h !== displaced && h.posX === newPos.posX && h.posY === newPos.posY);
+      displaced = clones.find(
+        h => h !== displaced && h.posX === newPos.posX && h.posY === newPos.posY
+      );
       if (!displaced) {
         break;
       }
@@ -95,7 +102,9 @@ const Grid = () => {
 
   return (
     <div className={css.container}>
-      {humans.map(h => <Human key={h.key} info={h} />)}
+      {humans.map(h => (
+        <Human key={h.key} info={h} />
+      ))}
     </div>
   );
 };
