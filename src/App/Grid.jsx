@@ -39,7 +39,7 @@ const Grid = () => {
           'https://uifaces.co/api?limit=30&emotion[]=happiness&from_age=0&to_age=100',
           {
             headers: {
-              'X-API-KEY': '652ad3f96a6451262e9fdd3ecfb99f',
+              'X-API-KEY': atob('NjUyYWQzZjk2YTY0NTEyNjJlOWZkZDNlY2ZiOTlm'),
             },
           }
         )
