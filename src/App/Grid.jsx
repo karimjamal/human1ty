@@ -4,6 +4,13 @@ import React, { useState, useEffect } from 'react';
 import Human from './Human';
 import css from './Grid.scss';
 
+const BlackLivesMatter = {
+  name: 'Black Lives Matter',
+  position: 'So take a stand',
+  photo:
+    'https://i.pinimg.com/originals/e2/84/ed/e284edcb74cfdb0461bf33ea137777bd.jpg',
+};
+
 const randomPos = (posX, posY) => {
   while (true) {
     let [x, y] = [posX, posY];
@@ -69,7 +76,7 @@ const Grid = () => {
 
     let newPos = { posX: 0, posY: 0 };
     const newHuman = {
-      ...images[count],
+      ...(Math.random() <= 0.05 ? BlackLivesMatter : images[count]),
       ...newPos,
       key: count,
     };
