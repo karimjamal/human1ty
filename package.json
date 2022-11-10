@@ -13,7 +13,7 @@
     "prettier": "^2.0.5"
   },
   "dependencies": {
-    "node-sass": "^7.0.0",
+    "node-sass": "^7.0.3",
     "postcss-modules": "^1.4.1",
     "react": "^16.0.0",
     "react-dom": "^16.9.0"
